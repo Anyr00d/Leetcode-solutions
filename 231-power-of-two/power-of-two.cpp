@@ -4,7 +4,6 @@ public:
         if(n<=0){
             return false;
         }
-       int x=float(log2(n));
-       return x==log2(n);
+        return ceil(log2(n)) == floor(log2(n));
     }
 };
